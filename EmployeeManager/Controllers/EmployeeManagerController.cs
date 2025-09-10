@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EmployeeManager.Controllers
 {
+    [Authorize(Roles ="Manager")]
     public class EmployeeManagerController : Controller
     {
         private AppDbContext db = null;
